@@ -1,5 +1,16 @@
-def roll_call_dwarves# code an argument here
+# def roll_call_dwarves(array)# code an argument here
+#   # Your code here
+#   newArr = []
+#   array.each_with_index { |name, i| newArr << roll_call_dwarves(array) }
+#   newArr
+# end
+
+def roll_call_dwarves(array)# code an argument here
   # Your code here
+  #dwarfs = ["Doc", "Dopey", "Bashful", "Grumpy"]
+  array.each_with_index do | name , index |
+    puts "#{index + 1} #{name}"
+  end
 end
 
 def summon_captain_planet# code an argument here
